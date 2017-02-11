@@ -1,0 +1,14 @@
+parserOptions:
+  ecmaVersion: 6
+extends:
+  - "eslint:recommended"
+  - "cleanjs"
+env:
+  node: true
+globals:
+  atom: true
+rules:
+  # Consistent style
+  quotes: [error, double] # Double quotes, error otherwise
+  # Doesn't really kick the deal in a configuration file
+  fp/no-unused-expression: off

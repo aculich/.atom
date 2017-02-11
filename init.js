@@ -1,4 +1,4 @@
-'use babel';
+"use babel";
 
 // Copyright (c) 2017 Sebastian Wiesner
 //
@@ -20,28 +20,28 @@
 
 // My atom configuration <3
 
-import {usePackage, configSet} from './use-package'
+import {usePackage, configSet} from "./use-package"
 
-configSet('welcome', {
+configSet("welcome", {
   showOnStartup: false
 });
 
-configSet('core', {
-  telemetryConsent: 'no',
+configSet("core", {
+  telemetryConsent: "no",
   openEmptyEditorOnStart: false,
-  themes: ['atom-light-ui', 'solarized-light-syntax']
+  themes: ["atom-light-ui", "solarized-light-syntax"]
 });
 
-configSet('editor', {
-  fontFamily: 'Hasklig',
+configSet("editor", {
+  fontFamily: "Hasklig",
   lineHeight: 1.35,
   fontSize: 14,
   softWrap: true,
   softWrapAtPreferredLineLength: true,
-  tabType: 'soft'
+  tabType: "soft"
 });
 
 // Utilities
-usePackage('atom-oss-license');
+usePackage("atom-oss-license");
 
-atom.notifications.addSuccess('Hello world, my dear Atom!');
+atom.notifications.addSuccess("Hello world, my dear Atom!");
