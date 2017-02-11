@@ -116,5 +116,3 @@ usePackage("atom-oss-license");
 
 // Documentation
 usePackage("keybinding-cheatsheet");
-
-atom.notifications.addSuccess("Hello world, my dear Atom!");
