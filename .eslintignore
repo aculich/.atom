@@ -1,0 +1,9 @@
+node_modules/**
+packages/**
+storage/**
+recovery/**
+compile-cache/**
+blob-store/**
+
+use-package.js
+package-manager.coffee
