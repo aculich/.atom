@@ -20,7 +20,7 @@
 
 // My atom configuration <3
 
-import {usePackage, configSet} from "./use-package"
+import {usePackage, configSet} from "./use-package";
 
 // Core settings
 configSet("welcome", {
