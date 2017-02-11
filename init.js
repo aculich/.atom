@@ -75,6 +75,8 @@ usePackage("autocomplete-plus", {
   }
 });
 
+usePackage("autocomplete-emojis"); // Most important compl. source ever
+
 // Navigation
 usePackage("jumpy", {
   enableKeys: true
