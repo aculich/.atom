@@ -42,13 +42,72 @@ configSet("editor", {
   tabType: "soft"
 });
 
+// Regain control of my key bindings
+usePackage("disable-keybindings", {
+  config: {
+    allCommunityPackages: true,
+    exceptCommunityPackages: []
+  }
+});
+
+// Editing
+usePackage("expand-region", {
+  keymap: {
+    "atom-text-editor:not([mini])": {
+      "alt-up": "expand",
+      "alt-down": "shrink"
+    }
+  }
+});
+
+// Completion
+usePackage("autocomplete-plus", {
+  config: {
+    // Complete less aggressively
+    autoActivationDelay: 1000,
+    backspaceTriggersAutocomplete: true,
+    // Do not complete with enter unless explicitly selected
+    confirmCompletion: "tab always, enter when suggestion explicitly selected",
+    // Don't insert single candidate automatically
+    enableAutoConfirmSingleSuggestion: false,
+    // Identify non-latin alphabet characters as letters
+    enableExtendedUnicodeSupport: true
+  }
+});
+
+// Navigation
+usePackage("jumpy", {
+  enableKeys: true
+});
+
+// Jump to links
+usePackage("hyperclick", {
+  enableKeys: true
+});
+usePackage("hyperlink-hyperclick");
+
 // Coding
-usePackage("linter");
+usePackage("linter", {
+  enableKeys: true,
+  config: {
+    // Check less aggressively
+    lintOnFlyInterval: 1000,
+    // Show "line" tab in status bar
+    showErrorTabLine: true
+  }
+});
 
 // Javascript
+usePackage("js-hyperclick");
 usePackage("linter-eslint");
+usePackage("run-in-atom", { // Run JS code right in Atom
+  enableKeys: true
+});
 
 // Utilities
 usePackage("atom-oss-license");
+
+// Documentation
+usePackage("keybinding-cheatsheet");
 
 atom.notifications.addSuccess("Hello world, my dear Atom!");
