@@ -101,7 +101,12 @@ usePackage("linter", {
 
 // Version control
 usePackage("git-plus", {
-  enableKeys: true // TODO: Maybe find a better keymap?
+  enableKeys: true, // TODO: Maybe find a better keymap?
+  config: {
+    commits: {
+      verboseCommits: true
+    }
+  }
 });
 usePackage("git-log");
 usePackage("git-time-machine");
