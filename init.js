@@ -110,6 +110,7 @@ usePackage("git-plus", {
 });
 usePackage("git-log");
 usePackage("git-time-machine");
+usePackage("merge-conflicts");
 
 // Javascript
 usePackage("js-hyperclick");
@@ -118,8 +119,14 @@ usePackage("run-in-atom", { // Run JS code right in Atom
   enableKeys: true
 });
 
+// Misc languages
+usePackage("language-ignore"); // Ignore files
+
 // Utilities
 usePackage("atom-oss-license");
 
 // Documentation
 usePackage("keybinding-cheatsheet");
+usePackage("dash", {
+  enableKeys: true
+});
