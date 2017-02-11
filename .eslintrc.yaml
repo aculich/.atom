@@ -9,6 +9,7 @@ globals:
   atom: true
 rules:
   # Consistent style
+  semi: [error, always] # Semicolon ftw
   quotes: [error, double] # Double quotes, error otherwise
   # Doesn't really kick the deal in a configuration file
   fp/no-unused-expression: off
