@@ -97,6 +97,13 @@ usePackage("linter", {
   }
 });
 
+// Version control
+usePackage("git-plus", {
+  enableKeys: true // TODO: Maybe find a better keymap?
+});
+usePackage("git-log");
+usePackage("git-time-machine");
+
 // Javascript
 usePackage("js-hyperclick");
 usePackage("linter-eslint");
