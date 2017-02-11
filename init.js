@@ -22,6 +22,7 @@
 
 import {usePackage, configSet} from "./use-package"
 
+// Core settings
 configSet("welcome", {
   showOnStartup: false
 });
@@ -40,6 +41,12 @@ configSet("editor", {
   softWrapAtPreferredLineLength: true,
   tabType: "soft"
 });
+
+// Coding
+usePackage("linter");
+
+// Javascript
+usePackage("linter-eslint");
 
 // Utilities
 usePackage("atom-oss-license");
