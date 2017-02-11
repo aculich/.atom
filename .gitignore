@@ -6,5 +6,9 @@
 /recovery/
 /storage/
 
-# Atom packages
+# Atom packages & libs for my config
 /packages/
+/node_modules/
+
+# The config file; I've got everything in init.js
+/config.cson
