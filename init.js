@@ -81,6 +81,8 @@ usePackage("spaces-in-braces", {
 });
 usePackage("underline-trailing-whitespace");
 
+usePackage("pigments"); // Colorise colours
+
 // Completion
 usePackage("autocomplete-plus", {
   config: {
