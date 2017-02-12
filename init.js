@@ -52,6 +52,13 @@ usePackage("disable-keybindings", {
   }
 });
 
+// Files
+usePackage("file-watcher", {
+  config: {
+    autoReload: true
+  }
+});
+
 // Editing
 usePackage("expand-region", {
   keymap: {
