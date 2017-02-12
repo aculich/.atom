@@ -69,6 +69,11 @@ usePackage("expand-region", {
   }
 });
 
+usePackage("spaces-in-braces", {
+  enableKeys: true
+});
+usePackage("underline-trailing-whitespace");
+
 // Completion
 usePackage("autocomplete-plus", {
   config: {
