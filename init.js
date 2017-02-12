@@ -22,6 +22,8 @@
 
 import {usePackage, configSet} from "./use-package";
 
+const myFont = "Hasklig";
+
 // Core settings
 configSet("welcome", {
   showOnStartup: false
@@ -34,7 +36,7 @@ configSet("core", {
 });
 
 configSet("editor", {
-  fontFamily: "Hasklig",
+  fontFamily: myFont,
   lineHeight: 1.35,
   fontSize: 14,
   softWrap: true,
@@ -124,6 +126,32 @@ usePackage("language-ignore"); // Ignore files
 
 // Utilities
 usePackage("atom-oss-license");
+usePackage("platformio-ide-terminal", {
+  enableKeys: true,
+  config: {
+    // The default blue is really aweful
+    ansiColors: {
+      normal: {
+        blue: "#4c4cff"
+      },
+      zBright: {
+        brightBlue: "#6565d1"
+      }
+    },
+    style: {
+      // Open faster
+      animationSpeed: 100,
+      defaultPanelHeight: "33%",
+      fontFamily: myFont,
+      // Why's there no solarized-light? 😢
+      theme: "solarized-dark"
+    },
+    toggles: {
+      // Automatically close terminal when shell exits
+      autoClose: true
+    }
+  }
+});
 
 // Documentation
 usePackage("keybinding-cheatsheet");
