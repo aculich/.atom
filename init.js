@@ -20,6 +20,10 @@
 
 // My atom configuration <3
 
+// I should try these packages:
+//
+// * https://atom.io/packages/atom-beautify (auto-format code)
+
 import {usePackage, configSet} from "./use-package";
 
 const myFont = "Hasklig";
@@ -51,6 +55,9 @@ usePackage("disable-keybindings", {
     exceptCommunityPackages: []
   }
 });
+
+// UI
+usePackage("file-icons");
 
 // Files
 usePackage("file-watcher", {
