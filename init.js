@@ -135,6 +135,26 @@ usePackage("git-log");
 usePackage("git-time-machine");
 usePackage("merge-conflicts");
 
+// Haskell
+usePackage("language-haskell");
+usePackage("ide-haskell", {
+  enableKeys: true,
+  config: {
+    // Auto-hide output if there's nothing to show
+    autoHideOutput: true
+  }
+});
+usePackage("haskell-ghc-mod", {
+  enableKeys: true,
+  config: {
+    // Use linter package for lint marks
+    useLinter: true
+  }
+});
+usePackage("autocomplete-haskell", {
+  enableKeys: true
+});
+
 // Javascript
 usePackage("js-hyperclick");
 usePackage("linter-eslint");
