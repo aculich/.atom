@@ -22,7 +22,15 @@
 'atom-workspace atom-text-editor:not(.mini)':
   'shift-enter': 'unset!'
 
+# Some global package bindings
+"atom-text-editor:not([mini])":
+  "alt-up": "expand-region:expand"
+  "alt-down": "expand-region:shrink"
+
+# Regular normal mode bindings
 'atom-text-editor.vim-mode-plus.normal-mode':
+  # Because I can't stop typing this
+  ': w': 'core:save'
   # Leader bindings in normal mode
   'space space': 'command-palette:toggle'
   'space e': 'linter:next-error'
@@ -31,6 +39,7 @@
   'space g C': 'git-plus:add-and-commit'
   'space g c': 'git-plus:commit'
   'space g l': 'git-log:show'
+  'space g M': 'merge-conflicts:detect'
   'space g m': 'git-plus:menu'
   'space g s': 'git-plus:status'
   'space g t': 'git-time-machine:toggle'
@@ -40,9 +49,9 @@
   'space l': 'hyperclick:confirm-cursor'
   'space t': 'fuzzy-finder:toggle-file-finder'
 
+# Special normal mode bindings
+# TODO: Add normal mode bindings for `.conflicted` selector from merge-conflicts
+
+# Regular insert mode bindings
 'atom-text-editor.vim-mode-plus.insert-mode':
   'f d': 'vim-mode-plus:activate-normal-mode'
-
-"atom-text-editor:not([mini])":
-  "alt-up": "expand-region:expand"
-  "alt-down": "expand-region:shrink"
