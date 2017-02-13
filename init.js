@@ -60,6 +60,9 @@ usePackage("disable-keybindings", {
 usePackage("vim-mode-plus", {
   enableKeys: true
 });
+usePackage("vim-mode-plus-keymaps-for-surround", {
+  enableKeys: true
+});
 
 // UI
 usePackage("file-icons");
