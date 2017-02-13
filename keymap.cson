@@ -47,6 +47,7 @@
   "space h D": "dash:shortcut-alt"
   "space j": "jumpy:toggle"
   "space l": "hyperclick:confirm-cursor"
+  "space p": "application:reopen-project"
   "space R": "window:reload"
   "space T": "tree-view:toggle"
   "space t": "fuzzy-finder:toggle-file-finder"
