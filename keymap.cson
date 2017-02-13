@@ -28,7 +28,7 @@
   "alt-down": "expand-region:shrink"
 
 # Regular normal mode bindings
-"atom-text-editor.vim-mode-plus.normal-mode":
+"atom-text-editor.vim-mode-plus:not(.insert-mode)":
   # Because I can"t stop typing this
   ": w": "core:save"
   # Leader bindings in normal mode
