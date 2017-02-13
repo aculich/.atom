@@ -23,6 +23,10 @@
 // I should try these packages:
 //
 // * https://atom.io/packages/atom-beautify (auto-format code)
+// * paner and choose-pane (for pane management)
+// * cursor-history (for C-i and C-o)
+// * open-this for gf to open file under cursor
+// * https://atom.io/packages/markdown-writer for markdown fanciness
 
 import {usePackage, configSet} from "./use-package";
 
