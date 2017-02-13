@@ -1,0 +1,48 @@
+# Copyright (c) 2017 <YOUR NAME>
+#
+# GNU GENERAL PUBLIC LICENSE
+#    Version 3, 29 June 2007
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# My Atom keymap
+
+# Undefine some keybindings from packages
+'atom-workspace atom-text-editor:not(.mini)':
+  'shift-enter': 'unset!'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  # Leader bindings in normal mode
+  'space space': 'command-palette:toggle'
+  'space e': 'linter:next-error'
+  'space g A': 'git-plus:add-all-commit-and-push'
+  'space g a': 'git-plus:add'
+  'space g C': 'git-plus:add-and-commit'
+  'space g c': 'git-plus:commit'
+  'space g l': 'git-log:show'
+  'space g m': 'git-plus:menu'
+  'space g s': 'git-plus:status'
+  'space g t': 'git-time-machine:toggle'
+  'space h d': 'dash:shortcut'
+  'space h D': 'dash:shortcut-alt'
+  'space j': 'jumpy:toggle'
+  'space l': 'hyperclick:confirm-cursor'
+  'space t': 'fuzzy-finder:toggle-file-finder'
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'f d': 'vim-mode-plus:activate-normal-mode'
+
+"atom-text-editor:not([mini])":
+  "alt-up": "expand-region:expand"
+  "alt-down": "expand-region:shrink"

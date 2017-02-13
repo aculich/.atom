@@ -56,6 +56,11 @@ usePackage("disable-keybindings", {
   }
 });
 
+// And vimify things
+usePackage("vim-mode-plus", {
+  enableKeys: true
+});
+
 // UI
 usePackage("file-icons");
 
@@ -67,14 +72,7 @@ usePackage("file-watcher", {
 });
 
 // Editing
-usePackage("expand-region", {
-  keymap: {
-    "atom-text-editor:not([mini])": {
-      "alt-up": "expand",
-      "alt-down": "shrink"
-    }
-  }
-});
+usePackage("expand-region");
 
 usePackage("spaces-in-braces", {
   enableKeys: true
@@ -106,14 +104,11 @@ usePackage("jumpy", {
 });
 
 // Jump to links
-usePackage("hyperclick", {
-  enableKeys: true
-});
+usePackage("hyperclick");
 usePackage("hyperlink-hyperclick");
 
 // Coding
 usePackage("linter", {
-  enableKeys: true,
   config: {
     // Check less aggressively
     lintOnFlyInterval: 1000,
@@ -124,7 +119,6 @@ usePackage("linter", {
 
 // Version control
 usePackage("git-plus", {
-  enableKeys: true, // TODO: Maybe find a better keymap?
   config: {
     commits: {
       verboseCommits: true
@@ -138,29 +132,23 @@ usePackage("merge-conflicts");
 // Haskell
 usePackage("language-haskell");
 usePackage("ide-haskell", {
-  enableKeys: true,
   config: {
     // Auto-hide output if there's nothing to show
     autoHideOutput: true
   }
 });
 usePackage("haskell-ghc-mod", {
-  enableKeys: true,
   config: {
     // Use linter package for lint marks
     useLinter: true
   }
 });
-usePackage("autocomplete-haskell", {
-  enableKeys: true
-});
+usePackage("autocomplete-haskell");
 
 // Javascript
 usePackage("js-hyperclick");
 usePackage("linter-eslint");
-usePackage("run-in-atom", { // Run JS code right in Atom
-  enableKeys: true
-});
+usePackage("run-in-atom");
 
 // Misc languages
 usePackage("language-ignore"); // Ignore files
@@ -168,7 +156,6 @@ usePackage("language-ignore"); // Ignore files
 // Utilities
 usePackage("atom-oss-license");
 usePackage("platformio-ide-terminal", {
-  enableKeys: true,
   config: {
     // The default blue is really aweful
     ansiColors: {
@@ -196,6 +183,4 @@ usePackage("platformio-ide-terminal", {
 
 // Documentation
 usePackage("keybinding-cheatsheet");
-usePackage("dash", {
-  enableKeys: true
-});
+usePackage("dash");
