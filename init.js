@@ -157,6 +157,9 @@ usePackage("js-hyperclick");
 usePackage("linter-eslint");
 usePackage("run-in-atom");
 
+// Markdown
+usePackage("language-markdown"); // Much better than the built-in one
+
 // Misc languages
 usePackage("language-ignore"); // Ignore files
 

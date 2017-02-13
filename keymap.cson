@@ -52,7 +52,21 @@
 
 # Special normal mode bindings
 # TODO: Add normal mode bindings for `.conflicted` selector from merge-conflicts
+# Markdown
+"atom-text-editor[data-grammar='text md'].vim-mode-plus:not(.insert-mode)":
+  ", x": "markdown:toggle-task"
 
 # Regular insert mode bindings
 "atom-text-editor.vim-mode-plus.insert-mode":
   "f d": "vim-mode-plus:activate-normal-mode"
+
+# Special insert mode bindings
+# Markdown
+"atom-text-editor[data-grammar='text md'].vim-mode-plus.insert-mode":
+  "tab": "markdown:indent-list-item"
+  "shift-tab": "markdown:outdent-list-item"
+  "_": "markdown:emphasis"
+  "*": "markdown:strong-emphasis"
+  "~": "markdown:strike-through"
+  "@": "markdown:link"
+  "!": "markdown:image"
