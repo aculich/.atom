@@ -47,6 +47,7 @@
   "space h D": "dash:shortcut-alt"
   "space j": "jumpy:toggle"
   "space l": "hyperclick:confirm-cursor"
+  "space R": "window:reload"
   "space t": "fuzzy-finder:toggle-file-finder"
 
 # Special normal mode bindings
