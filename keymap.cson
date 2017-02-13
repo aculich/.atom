@@ -19,56 +19,56 @@
 # My Atom keymap
 
 # Undefine some keybindings from packages
-"atom-workspace atom-text-editor:not(.mini)":
-  "shift-enter": "unset!"
+'atom-workspace atom-text-editor:not(.mini)':
+  'shift-enter': 'unset!'
 
 # Some global package bindings
-"atom-text-editor:not([mini])":
-  "alt-up": "expand-region:expand"
-  "alt-down": "expand-region:shrink"
+'atom-text-editor:not([mini])':
+  'alt-up': 'expand-region:expand'
+  'alt-down': 'expand-region:shrink'
 
 # Regular normal mode bindings
-"atom-text-editor.vim-mode-plus:not(.insert-mode)":
-  # Because I can"t stop typing this
-  ": w": "core:save"
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  # Because I can't stop typing this
+  ': w': 'core:save'
   # Leader bindings in normal mode
-  "space space": "command-palette:toggle"
-  "space e": "linter:next-error"
-  "space g A": "git-plus:add-all-commit-and-push"
-  "space g a": "git-plus:add"
-  "space g C": "git-plus:add-and-commit"
-  "space g c": "git-plus:commit"
-  "space g l": "git-log:show"
-  "space g M": "merge-conflicts:detect"
-  "space g m": "git-plus:menu"
-  "space g s": "git-plus:status"
-  "space g t": "git-time-machine:toggle"
-  "space h d": "dash:shortcut"
-  "space h D": "dash:shortcut-alt"
-  "space j": "jumpy:toggle"
-  "space l": "hyperclick:confirm-cursor"
-  "space p": "application:reopen-project"
-  "space R": "window:reload"
-  "space T": "tree-view:toggle"
-  "space t": "fuzzy-finder:toggle-file-finder"
+  'space space': 'command-palette:toggle'
+  'space e': 'linter:next-error'
+  'space g A': 'git-plus:add-all-commit-and-push'
+  'space g a': 'git-plus:add'
+  'space g C': 'git-plus:add-and-commit'
+  'space g c': 'git-plus:commit'
+  'space g l': 'git-log:show'
+  'space g M': 'merge-conflicts:detect'
+  'space g m': 'git-plus:menu'
+  'space g s': 'git-plus:status'
+  'space g t': 'git-time-machine:toggle'
+  'space h d': 'dash:shortcut'
+  'space h D': 'dash:shortcut-alt'
+  'space j': 'jumpy:toggle'
+  'space l': 'hyperclick:confirm-cursor'
+  'space p': 'application:reopen-project'
+  'space R': 'window:reload'
+  'space T': 'tree-view:toggle'
+  'space t': 'fuzzy-finder:toggle-file-finder'
 
 # Special normal mode bindings
 # TODO: Add normal mode bindings for `.conflicted` selector from merge-conflicts
 # Markdown
-"atom-text-editor[data-grammar='text md'].vim-mode-plus:not(.insert-mode)":
-  ", x": "markdown:toggle-task"
+'atom-text-editor[data-grammar="text md"].vim-mode-plus:not(.insert-mode)':
+  ', x': 'markdown:toggle-task'
 
 # Regular insert mode bindings
-"atom-text-editor.vim-mode-plus.insert-mode":
-  "f d": "vim-mode-plus:activate-normal-mode"
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'f d': 'vim-mode-plus:activate-normal-mode'
 
 # Special insert mode bindings
 # Markdown
-"atom-text-editor[data-grammar='text md'].vim-mode-plus.insert-mode":
-  "tab": "markdown:indent-list-item"
-  "shift-tab": "markdown:outdent-list-item"
-  "_": "markdown:emphasis"
-  "*": "markdown:strong-emphasis"
-  "~": "markdown:strike-through"
-  "@": "markdown:link"
-  "!": "markdown:image"
+'atom-text-editor[data-grammar="text md"].vim-mode-plus.insert-mode':
+  'tab': 'markdown:indent-list-item'
+  'shift-tab': 'markdown:outdent-list-item'
+  '_': 'markdown:emphasis'
+  '*': 'markdown:strong-emphasis'
+  '~': 'markdown:strike-through'
+  '@': 'markdown:link'
+  '!': 'markdown:image'
