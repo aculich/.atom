@@ -152,6 +152,9 @@ usePackage("haskell-ghc-mod", {
 });
 usePackage("autocomplete-haskell");
 
+// Scala
+usePackage("language-scala");
+
 // Javascript
 usePackage("js-hyperclick");
 usePackage("linter-eslint");
