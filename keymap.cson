@@ -48,6 +48,7 @@
   'space g l': 'git-log:show'
   'space g M': 'merge-conflicts:detect'
   'space g m': 'git-plus:menu'
+  'space g p': 'git-plus:push'
   'space g s': 'git-plus:status'
   'space g t': 'git-time-machine:toggle'
   'space h d': 'dash:shortcut'
