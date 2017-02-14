@@ -27,6 +27,7 @@
 // * cursor-history (for C-i and C-o)
 // * open-this for gf to open file under cursor
 // * https://atom.io/packages/markdown-writer for markdown fanciness
+// * https://atom.io/packages/docblockr for documentation comments
 
 import {usePackage, configSet} from "./use-package";
 
