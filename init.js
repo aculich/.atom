@@ -53,6 +53,9 @@ configSet("editor", {
   tabType: "soft"
 });
 
+// Run code in atom (why's this not builtin❓)
+usePackage("run-in-atom");
+
 // Regain control of my key bindings
 usePackage("disable-keybindings", {
   config: {
@@ -168,10 +171,11 @@ usePackage("autocomplete-haskell");
 // Scala
 usePackage("language-scala");
 
-// Javascript
+// Javascript & related languages
 usePackage("js-hyperclick");
 usePackage("linter-eslint");
-usePackage("run-in-atom");
+
+usePackage("atom-typescript");
 
 // Markdown
 usePackage("language-markdown"); // Much better than the built-in one

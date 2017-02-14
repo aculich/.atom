@@ -66,6 +66,19 @@
 # Markdown
 'atom-text-editor[data-grammar="text md"].vim-mode-plus:not(.insert-mode)':
   ', x': 'markdown:toggle-task'
+# Typescript
+'atom-text-editor:not([mini])[data-grammar^="source ts"].vim-mode-plus:not(.insert-mode)':
+  ', b': 'typescript:build'
+  ', c': 'typescript:context-actions'
+  ', d': 'typescript:go-to-declaration'
+  ', f': 'typescript:format-code'
+  ', h': 'typescript:go-to-previous'
+  ', l': 'typescript:go-to-next'
+  ', o': 'typescript:output-toggle'
+  ', q': 'typescript:quick-fix'
+  ', r': 'typescript:rename-refactor'
+  ', s': 'typescript:sync'
+  ', u': 'typescript:find-references'
 
 # Regular insert mode bindings
 'atom-text-editor.vim-mode-plus.insert-mode':
