@@ -27,7 +27,7 @@
 // * https://atom.io/packages/markdown-writer for markdown fanciness
 // * https://atom.io/packages/docblockr for documentation comments
 
-import {usePackage, configSet} from "./use-package";
+import {usePackage, configSet} from "atom-use-package";
 
 const myFont = "Hasklig";
 
