@@ -62,7 +62,19 @@ usePackage("disable-keybindings", {
 
 // And vimify things
 usePackage("vim-mode-plus", {
-  enableKeys: true
+  enableKeys: true,
+  config: {
+    // Clear highlights when pressing Esc in normal mode
+    clearHighlightSearchOnResetNormalMode: true,
+    clearPersistentSelectionOnResetNormalMode: true,
+    // Search incrementally and highlight matches
+    incrementalSearch: true,
+    highlightSearch: true,
+    // Use smart case when searching: If the search is all lowercase, search
+    // case-insensitive, otherwise search by matching case
+    useSmartcaseForSearch: true,
+    useSmartcaseForSearchCurrentWord: true
+  }
 });
 usePackage("vim-mode-plus-keymaps-for-surround", {
   enableKeys: true
