@@ -57,7 +57,8 @@
   ': w': 'core:save'
   # Leader bindings in normal mode
   'space space': 'command-palette:toggle'
-  'space e': 'linter:next-error'
+  'space e h': 'linter:previous-error'
+  'space e l': 'linter:next-error'
   'space g A': 'git-plus:add-all-commit-and-push'
   'space g a': 'git-plus:add'
   'space g C': 'git-plus:add-and-commit'
