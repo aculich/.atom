@@ -17,16 +17,33 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # My Atom keymap
+'atom-workspace':
+  # Suggested default map for paner
+  'ctrl-w x': 'paner:swap-pane'
+  'ctrl-w X': 'paner:send-item'
+  'ctrl-w K': 'paner:very-top'
+  'ctrl-w J': 'paner:very-bottom'
+  'ctrl-w H': 'paner:very-left'
+  'ctrl-w L': 'paner:very-right'
+  'ctrl-w h': 'paner:split-bottom'
+  'ctrl-w v': 'paner:split-left'
+  # Switch panes globally
+  'ctrl-w w': 'choose-pane:start'
 
-# Undefine some keybindings from packages
+# Global editor bindings
 'atom-workspace atom-text-editor:not(.mini)':
+  # Undefine a binding from jumpy, while retaining all its others
   'shift-enter': 'unset!'
-
-# Some global package bindings
-'atom-text-editor:not([mini])':
+  # Region expansion
   'alt-up': 'expand-region:expand'
   'alt-down': 'expand-region:shrink'
-# Copied from platformio-ide-terminal keymap
+  # Cursor position history
+  'ctrl-i':     'cursor-history:next'
+  'ctrl-o':     'cursor-history:prev'
+  'ctrl-cmd-i': 'cursor-history:next-within-editor'
+  'ctrl-cmd-o': 'cursor-history:prev-within-editor'
+
+# Specific selectors
 '.platform-darwin .platformio-ide-terminal .terminal':
   'cmd-c': 'platformio-ide-terminal:copy'
   'cmd-v': 'platformio-ide-terminal:paste'
@@ -59,6 +76,9 @@
   'space R': 'window:reload'
   'space T': 'tree-view:toggle'
   'space t': 'fuzzy-finder:toggle-file-finder'
+  'space w /': 'paner:split-right'
+  'space w -': 'paner:split-bottom'
+  'space w w': 'choose-pane:start'
   'space `': 'platformio-ide-terminal:toggle'
 
 # Special normal mode bindings

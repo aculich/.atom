@@ -23,8 +23,6 @@
 // I should try these packages:
 //
 // * https://atom.io/packages/atom-beautify (auto-format code)
-// * paner and choose-pane (for pane management)
-// * cursor-history (for C-i and C-o)
 // * open-this for gf to open file under cursor
 // * https://atom.io/packages/markdown-writer for markdown fanciness
 // * https://atom.io/packages/docblockr for documentation comments
@@ -83,9 +81,12 @@ usePackage("vim-mode-plus", {
 usePackage("vim-mode-plus-keymaps-for-surround", {
   enableKeys: true
 });
+usePackage("cursor-history");
 
 // UI
 usePackage("file-icons");
+usePackage("paner");  // Pane management
+usePackage("choose-pane");  // Choose pane by label
 
 // Files
 usePackage("file-watcher", {
@@ -170,6 +171,7 @@ usePackage("autocomplete-haskell");
 
 // Scala
 usePackage("language-scala");
+usePackage("language-hocon");
 
 // Javascript & related languages
 usePackage("js-hyperclick");
