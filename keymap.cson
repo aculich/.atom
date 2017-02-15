@@ -78,9 +78,11 @@
   'space R': 'window:reload'
   'space T': 'tree-view:toggle'
   'space t': 'fuzzy-finder:toggle-file-finder'
+  'space w Q': 'window:close'
+  'space w q': 'core:close'
+  'space w w': 'choose-pane:start'
   'space w /': 'paner:split-right'
   'space w -': 'paner:split-bottom'
-  'space w w': 'choose-pane:start'
   'space `': 'platformio-ide-terminal:toggle'
 
 # Special normal mode bindings
