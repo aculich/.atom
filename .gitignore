@@ -12,3 +12,6 @@
 
 # The config file; I've got everything in init.js
 /config.cson
+
+# Files from packages
+/split-diff/

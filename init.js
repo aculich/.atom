@@ -149,9 +149,10 @@ usePackage("git-plus", {
     }
   }
 });
-usePackage("git-log");
-usePackage("git-time-machine");
-usePackage("merge-conflicts");
+usePackage("git-log"); // Show a graph log of Git commits (like SourceTree)
+usePackage("git-time-machine"); // Go back to past revisions
+usePackage("merge-conflicts"); // Solve merge conflicts in Atom
+usePackage("split-diff"); // Diff in a split pane
 
 // Haskell
 usePackage("language-haskell");
