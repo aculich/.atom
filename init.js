@@ -145,7 +145,16 @@ usePackage("linter", {
 usePackage("git-plus", {
   config: {
     commits: {
+      // Include diff in commit message editor
       verboseCommits: true
+    },
+    experimental: {
+      // Use split-diff package for git-plus diffs
+      useSplitDiff: true
+    },
+    remoteInteractions: {
+      // Pull with --rebase
+      pullRebase: true
     }
   }
 });
