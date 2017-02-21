@@ -108,6 +108,16 @@
   ', r': 'typescript:rename-refactor'
   ', s': 'typescript:sync'
   ', u': 'typescript:find-references'
+# Haskell
+'atom-text-editor:not([mini])[data-grammar~="haskell"].vim-mode-plus:not(.insert-mode)':
+  ', d': 'haskell-ghc-mod:go-to-declaration'
+  ', i': 'haskell-ghc-mod:insert-import'
+  ', h': 'ide-haskell:prev-error'
+  ', l': 'ide-haskell:next-error'
+  ', O': 'ide-haskell:toggle-output'
+  ', S': 'haskell-ghc-mod:case-split'
+  ', s': 'haskell-ghc-mod:sig-fill'
+  ', t': 'haskell-ghc-mod:show-type-and-info'
 
 # Regular insert mode bindings
 'atom-text-editor.vim-mode-plus.insert-mode':
