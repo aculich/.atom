@@ -186,6 +186,7 @@ usePackage("haskell-ghc-mod", {
   }
 });
 usePackage("autocomplete-haskell");
+usePackage("build-stack"); // Build haskell projects with Stack
 
 // Scala
 usePackage("language-scala");
