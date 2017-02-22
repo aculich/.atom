@@ -22,10 +22,11 @@
 
 // I should try these packages:
 //
-// * https://atom.io/packages/atom-beautify (auto-format code)
 // * open-this for gf to open file under cursor
+// * https://atom.io/packages/atom-beautify (auto-format code)
 // * https://atom.io/packages/markdown-writer for markdown fanciness
 // * https://atom.io/packages/docblockr for documentation comments
+// * Find a package for better comment commands?
 
 import {usePackage, configSet} from "atom-use-package";
 
@@ -97,11 +98,11 @@ usePackage("file-watcher", {
 
 // Editing
 usePackage("expand-region");
-
+// TODO: find a better package for whitespace
+usePackage("underline-trailing-whitespace");
 usePackage("spaces-in-braces", {
   enableKeys: true
 });
-usePackage("underline-trailing-whitespace");
 
 usePackage("pigments"); // Colorise colours
 
@@ -132,6 +133,13 @@ usePackage("hyperclick");
 usePackage("hyperlink-hyperclick");
 
 // Coding
+usePackage("build", {
+  config: {
+    // Save all files when building
+    saveOnBuild: true
+  }
+});
+
 usePackage("linter", {
   config: {
     // Check less aggressively

@@ -50,6 +50,11 @@
 '.platform-linux .platformio-ide-terminal .terminal, .platform-win32 .platformio-ide-terminal .terminal':
   'alt-v': 'platformio-ide-terminal:paste'
   'alt-c': 'platformio-ide-terminal:copy'
+".build":
+  "escape": "build:stop"
+".build-confirm":
+  "enter": "build:confirm",
+  "escape": "build:no-confirm"
 
 # Regular normal mode bindings
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
@@ -57,6 +62,11 @@
   ': w': 'core:save'
   # Leader bindings in normal mode
   'space space': 'command-palette:toggle'
+  'space b b': 'build:trigger'
+  'space b p': 'build:toggle-panel'
+  'space b e': 'build:error-match'
+  'space b E': 'build:error-match-first'
+  'space b t': 'build:select-active-target'
   'space c space': 'editor:toggle-line-comments'
   'space e h': 'linter:previous-error'
   'space e l': 'linter:next-error'
