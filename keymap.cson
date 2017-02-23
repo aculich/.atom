@@ -118,6 +118,9 @@
   ', r': 'typescript:rename-refactor'
   ', s': 'typescript:sync'
   ', u': 'typescript:find-references'
+# Rust
+'atom-text-editor:not([mini])[data-grammar~="rust"].vim-mode-plus:not(.insert-mode)':
+  ', d': 'racer:find-definition'
 # Haskell
 'atom-text-editor:not([mini])[data-grammar~="haskell"].vim-mode-plus:not(.insert-mode)':
   ', d': 'haskell-ghc-mod:go-to-declaration'

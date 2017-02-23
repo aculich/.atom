@@ -29,6 +29,8 @@
 // * Find a package for better comment commands?
 
 import {usePackage, configSet} from "atom-use-package";
+import {homedir} from "os";
+import path from "path";
 
 const myFont = "Hasklig";
 
@@ -187,6 +189,20 @@ usePackage("haskell-ghc-mod", {
 });
 usePackage("autocomplete-haskell");
 usePackage("build-stack"); // Build haskell projects with Stack
+
+// Rust
+usePackage("language-rust");
+usePackage("racer", {
+  config: {
+    rustSrcPath: path.join(homedir(), "Developer", "rust", "src"),
+    racerBinPath: path.join(homedir(), ".cargo", "bin", "racer")
+  }
+});
+usePackage("build-cargo", { // Build Rust projects with Cargo
+  config: {
+    openDocs: true // Open browser after building docs
+  }
+});
 
 // Scala
 usePackage("language-scala");
