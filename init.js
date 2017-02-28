@@ -178,7 +178,14 @@ usePackage("language-haskell");
 usePackage("ide-haskell", {
   config: {
     // Auto-hide output if there's nothing to show
-    autoHideOutput: true
+    autoHideOutput: true,
+    // Use hindent to format source code
+    stylishHaskellPath: "hindent",
+    stylishHaskellArguments: [
+      "--line-length", "80",
+      "--indent-size", "2",
+      "--sort-imports"
+    ]
   }
 });
 usePackage("haskell-ghc-mod", {
