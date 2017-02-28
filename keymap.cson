@@ -124,6 +124,7 @@
 # Haskell
 'atom-text-editor:not([mini])[data-grammar~="haskell"].vim-mode-plus:not(.insert-mode)':
   ', d': 'haskell-ghc-mod:go-to-declaration'
+  ', f': 'ide-haskell:prettify-file'
   ', i': 'haskell-ghc-mod:insert-import'
   ', h': 'ide-haskell:prev-error'
   ', l': 'ide-haskell:next-error'
