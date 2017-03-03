@@ -225,6 +225,7 @@ usePackage("atom-typescript");
 usePackage("language-markdown"); // Much better than the built-in one
 
 // Misc languages
+usePackage("language-viml"); // For .ideavimrc
 usePackage("language-ignore"); // Ignore files
 
 // Utilities
