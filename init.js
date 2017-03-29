@@ -259,3 +259,59 @@ usePackage("platformio-ide-terminal", {
 // Documentation
 usePackage("keybinding-cheatsheet");
 usePackage("dash");
+
+// aculich packages
+
+usePackage("atomic-emacs", {
+  enableKeys: true
+});
+
+usePackage("markdown-writer", {
+  enableKeys: true
+});
+usePackage("Hydrogen");
+usePackage("atom-beautify");
+usePackage("atomatigit", {
+  enableKeys: true
+});
+usePackage("autocomplete-plus");
+usePackage("busy");
+usePackage("busy-signal");
+usePackage("command-logger");
+usePackage("docker");
+usePackage("easy-motion-redux");
+usePackage("git-clone");
+usePackage("git-control");
+usePackage("git-diff-details");
+// usePackage("git-projects");
+usePackage("git-status");
+usePackage("github-issues");
+usePackage("gitignore-snippets");
+usePackage("graphviz-preview-plus");
+usePackage("hard-wrap");
+usePackage("hey-pane");
+usePackage("intentions");
+// usePackage("jupyter-notebook");
+usePackage("language-diff");
+usePackage("language-dot");
+usePackage("language-gitignore");
+usePackage("language-latex");
+usePackage("latex");
+usePackage("linter-ui-default");
+usePackage("markdown-preview-plus");
+usePackage("move-panes");
+usePackage("multi-cursor");
+usePackage("narrow");
+usePackage("open-emacs");
+// usePackage("run-command");
+usePackage("save-autorun");
+// usePackage("save-commands");
+usePackage("select-rectangle");
+usePackage("shell-it");
+usePackage("ssh-config");
+usePackage("tree-ignore");
+usePackage("tree-view-autoresize");
+usePackage("tree-view-filter");
+usePackage("tree-view-git-branch");
+usePackage("tree-view-git-status");
+usePackage("tree-view-open-files");
