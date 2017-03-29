@@ -33,8 +33,15 @@
   'shift-alt-x':     'run-command:toggle-panel'
   'shift-ctrl-alt-1':'run-command:kill-last-command'
   'shift-alt-1':     'run-command:re-run-last-command'
-  'ctrl-h ctrl-b': 'keybinding-cheatsheet:toggle'
   'ctrl-x ctrl-g': 'atomatigit:toggle'
+  'ctrl-h ctrl-b': 'keybinding-cheatsheet:toggle'
+  'ctrl-h ctrl-k': 'application:open-your-keymap'
+  'ctrl-h ctrl-i': 'application:open-your-init-script'
+# application:open-your-config
+# application:open-your-init-script
+# application:open-your-keymap
+# application:open-your-snippets
+# application:open-your-stylesheet
 
 'atom-workspace atom-text-editor':
   "ctrl-q": "atomic-emacs:kill-region"
