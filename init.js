@@ -42,7 +42,7 @@ configSet("welcome", {
 configSet("core", {
   telemetryConsent: "no",
   openEmptyEditorOnStart: true,
-  themes: ["atom-light-ui", "solarized-light-syntax"]
+  themes: ["atom-dark-ui", "solarized-dark-syntax"]
 });
 
 configSet("editor", {
