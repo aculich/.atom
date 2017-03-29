@@ -95,6 +95,7 @@
   'space g p': 'git-plus:push'
   'space g s': 'git-plus:status'
   'space g t': 'git-time-machine:toggle'
+  'space g g': 'atomatigit:toggle'
   'space h d': 'dash:shortcut'
   'space h D': 'dash:shortcut-alt'
   'space j': 'jumpy:toggle'
