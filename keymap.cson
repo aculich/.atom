@@ -29,6 +29,14 @@
   'ctrl-w v': 'paner:split-left'
   # Switch panes globally
   'ctrl-w w': 'choose-pane:start'
+  'shift-cmd-1':     'run-command:run'
+  'shift-alt-x':     'run-command:toggle-panel'
+  'shift-ctrl-alt-1':'run-command:kill-last-command'
+  'shift-alt-1':     'run-command:re-run-last-command'
+
+'atom-workspace atom-text-editor':
+  "ctrl-q": "atomic-emacs:kill-region"
+  "ctrl-w": "atomic-emacs:backward-kill-word"
 
 # Global editor bindings
 'atom-workspace atom-text-editor:not(.mini)':
@@ -147,3 +155,41 @@
   '~': 'markdown:strike-through'
   '@': 'markdown:link'
   '!': 'markdown:image'
+
+# Default Keymaps for Markdown Writer
+# https://atom.io/packages/markdown-writer
+#
+# Wiki: https://github.com/zhuochun/md-writer/wiki/Settings-for-Keymaps
+#
+".platform-darwin atom-text-editor:not([mini])":
+  "shift-cmd-K": "markdown-writer:insert-link"
+  "shift-cmd-I": "markdown-writer:insert-image"
+  "cmd-i":       "markdown-writer:toggle-italic-text"
+  "cmd-b":       "markdown-writer:toggle-bold-text"
+  "cmd-'":       "markdown-writer:toggle-code-text"
+  "cmd-k":       "markdown-writer:toggle-keystroke-text"
+  "cmd-h":       "markdown-writer:toggle-strikethrough-text"
+  'cmd->':       "markdown-writer:toggle-blockquote"
+  'cmd-"':       "markdown-writer:toggle-codeblock-text"
+  "ctrl-alt-1":  "markdown-writer:toggle-h1"
+  "ctrl-alt-2":  "markdown-writer:toggle-h2"
+  "ctrl-alt-3":  "markdown-writer:toggle-h3"
+  "ctrl-alt-4":  "markdown-writer:toggle-h4"
+  "ctrl-alt-5":  "markdown-writer:toggle-h5"
+  "shift-cmd-O": "markdown-writer:toggle-ol"
+  "shift-cmd-U": "markdown-writer:toggle-ul"
+  "cmd-j cmd-p": "markdown-writer:jump-to-previous-heading"
+  "cmd-j cmd-n": "markdown-writer:jump-to-next-heading"
+  "cmd-j cmd-d": "markdown-writer:jump-to-reference-definition"
+  "cmd-j cmd-t": "markdown-writer:jump-to-next-table-cell"
+
+'atom-text-editor':
+  'cmd-ctrl-n': 'git-diff:move-to-next-diff'
+  'cmd-ctrl-p': 'git-diff:move-to-previous-diff'
+  'ctrl-y': 'atomic-emacs:yank'
+
+'body':
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
